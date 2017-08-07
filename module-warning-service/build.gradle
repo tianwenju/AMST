@@ -1,0 +1,46 @@
+def isApplication = false
+if (isApplication.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        if (isApplication.toBoolean()) {
+            applicationId "com.delta.warningService"
+        }
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    sourceSets {
+//        main {
+//            if (isApplication.toBoolean()) {
+//                Manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+//            } else {
+//                Manifest.srcFile 'src/main/AndroidManifest.xml'
+//            }
+//        }
+//    }
+    resourcePrefix project.getName()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':commonlibs')
+    compile project(':websocketmanager')
+}

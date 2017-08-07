@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="BarCodeCollector-1.0.26-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.drc-bj/BarCodeCollector/1.0.26-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.drc-bj/BarCodeCollector/1.0.26-SNAPSHOT/res" />
+      <root url="jar://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.drc-bj/BarCodeCollector/1.0.26-SNAPSHOT/jars/libs/BarcodeAPI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.drc-bj/BarCodeCollector/1.0.26-SNAPSHOT/a5690be162c5af807c10548770e0ae756fbc26b0/BarCodeCollector-1.0.26-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
